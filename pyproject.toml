@@ -1,14 +1,15 @@
-[tool.poetry]
+[project]
 name = "phaseshifterarraygenerate"
 version = "0.1.0"
-description = ""
-authors = ["feikon <12680994+feikon@users.noreply.github.com>"]
+description = "Add your description here"
 readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "matplotlib>=3.10.7",
+    "numpy>=2.3.4",
+    "pandas>=2.3.3",
+]
 
-[tool.poetry.dependencies]
-python = "^3.12"
-pandas = "^2.1.2"
-
-[build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
+[[tool.uv.index]]
+url = "https://mirrors.aliyun.com/pypi/simple"
+default = true
